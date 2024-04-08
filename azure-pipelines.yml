@@ -21,9 +21,6 @@ steps:
 - task: JFrogNuGet@1
   inputs:
     command: 'restore'
-    artifactoryConnection: 'baget-nuget'
-    targetResolveRepo: 'baget-main-virtual'
+    artifactoryConnection: 'ganavik-new-baget'
+    targetResolveRepo: 'ganavik-nuget'
     solutionPath: '**/*.sln'
-    collectBuildInfo: true
-    buildName: '$(Build.DefinitionName)'
-    buildNumber: '$(Build.BuildNumber)'
