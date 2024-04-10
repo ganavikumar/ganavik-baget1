@@ -22,5 +22,5 @@ steps:
   inputs:
     command: 'restore'
     artifactoryConnection: 'ganavik-new-baget'
-    targetResolveRepo: 'ganavik-nuget'
+    targetResolveRepo: 'ganavik-nuget-remote'
     solutionPath: '**/*.sln'
