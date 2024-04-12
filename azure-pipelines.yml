@@ -23,7 +23,7 @@ steps:
   inputs:
     command: 'restore'
     artifactoryConnection: 'ganavik-new-baget'
-    targetResolveRepo: 'ganavik-nuget-remote'
+    targetResolveRepo: 'test-nuget'
     solutionPath: '**/*.sln'
 - task: NuGetCommand@2
   inputs:
