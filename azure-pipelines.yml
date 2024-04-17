@@ -23,11 +23,6 @@ steps:
   inputs:
     command: 'restore'
     artifactoryConnection: 'ganavik-new-baget'
-    targetResolveRepo: 'test-nuget'
+    targetResolveRepo: 'ganavik-nuget'
     solutionPath: '**/*.sln'
-- task: NuGetCommand@2
-  inputs:
-    command: 'restore'
-    restoreSolution: '**/*.sln'
-    feedsToUse: 'select'
-    vstsFeed: '0215435a-cb98-4b9a-a3fd-8f1eab664930'
+    nugetProtocolVersion: 'v2'
